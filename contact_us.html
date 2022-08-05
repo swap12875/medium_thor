@@ -7,7 +7,7 @@
     <title>
         Thor-contact us
     </title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="thor_style.css">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
             </table>
         </fieldset>
         <div align="center">
-            <img src="stock/cont.png" class="banner" alt="contact-use">
+            <img src="stock/cont.png" class="banner" alt="contact-us">
             <br><br>
             <h2>
                 <span class="heading2-text">
@@ -84,8 +84,8 @@
                     </tr>
                 </table>
                 <div align-content="right">
-                    <input type="image" id="submit_btn" class="input-button" src="stock/submit_button.png" enabled>
-                    <input type="image" id="cancel_btn" class="active" src="stock/cancel_button.png" enabled>
+                    <input type="image" id="submit_btn" class="input-button" src="stock/submit_button.png">
+                    <input type="image" id="cancel_btn" class="input-button" src="stock/cancel_button.png">
                 </div>
             </form>
         </div>
@@ -98,6 +98,17 @@
         </h6>
     </div>
     <script src="thor_script.js"></script>
+    <script>
+        let submit_button = document.getElementById("submit_btn");
+        let cancel_button = document.getElementById("cancel_btn");
+
+        document.getElementById("submit_btn").onclick = function (evt) {
+            evt.preventDefault();
+            location.href = 'index.html';
+            window.alert(alert_message)
+        }
+    </script>
+
 </body>
 
 </html>

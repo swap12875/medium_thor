@@ -51,8 +51,7 @@ window.onload = function () {
         default:
             page = "index.html";
     }
-    console.log(page + "** this is page");
-    pull_contents(service_offered, page)
+    pull_contents(service_offered, page);
 };
 
 /**
@@ -83,20 +82,3 @@ function pull_contents(services, page) {
         })
     }
 }
-
-function on_submit() {
-    window.alert(alert_message)
-    window.location.href = 'index.html'
-}
-
-function click_fill_contact_form() {
-    window.alert(alert_nav_to_contact_us)
-    window.location.href = 'contact_us.html'
-}
-
-let submit_button = document.getElementById("submit_btn")
-submit_button.addEventListener('click', on_submit());
-
-
-let fill_up_form = document.getElementById("get_in_touch")
-fill_up_form.addEventListener('click', click_fill_contact_form());
